@@ -5,9 +5,9 @@
 }
 head{
     display: flex;
-    background-color: rgb(0 9 19);
+    background-color: #10121b;
     flex-wrap: wrap;
 }
 body{
-    background-color: rgb(26, 26, 26);
+    background-color: #0f131b;
 }
