@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aprendendo JavaScript Data: 30/04/2023</title>
+</head>
+    <body>
+        <script>
+           //Aplicação calculadora dinâmica.
+           //queremos um numero inicial
+           //queremos um sinal (tipo de operação)
+           //quero um número final
+
+           var numeroInicial = prompt("informe o primeiro número...");
+
+           var sinal = prompt ("informe o sinal da sua operação...");
+            while(sinal != "-" && sinal != "+" && sinal != "/" && sinal != "*"){
+                alert("Por favor informe um sinal válido!");
+
+                sinal = prompt ("informe o sinal da sua operação...");
+            }
+           var numeroFinal = prompt("informe o número final...");
+            //funções para converter string em número (parseInt)
+           numeroInicial = parseInt(numeroInicial);
+           numeroFinal = parseInt(numeroFinal);
+
+           var resultadoFinal = 0;
+           if(sinal == "+"){
+                resultadoFinal = numeroInicial + numeroFinal;
+           }else if(sinal == "-"){
+                resultadoFinal = numeroInicial - numeroFinal;
+           }else if(sinal == "/"){
+                resultadoFinal = numeroInicial / numeroFinal;
+           }else if(sinal == "*"){
+                resultadoFinal = numeroInicial * numeroFinal;
+           }
+
+           alert("O resultado é: " +resultadoFinal);
+
+        </script>
+    </body>
+</html>

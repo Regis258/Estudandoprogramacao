@@ -9,11 +9,18 @@
 </head>
     <body>
         <script>
-            var anoNascimento = prompt("Por favor informe o ano do seu nascimento");
-            var anoAtuual = 2023;
-            //var anoAtual = prompt("Qual o ano atual?");
-            var idadeFinal = anoAtuual - anoNascimento;
-            console.log(idadeFinal);
+           var anoNascimento = prompt("Por favor informe a data do seu nascimento");
+           while(anoNascimento >= 2010){
+            alert("Por favor informe o seu ano de nascimento corretamente !");{
+                anoNascimento = prompt("Por favor informe o ano do seu nascimento");
+            }
+           }
+           var anoAtual = prompt("Qual é o ano atual que você está ?");
+            
+           var idadeFinal = anoAtual - anoNascimento;
+           
+           alert("A sua idade é: "+idadeFinal);
+
         </script>
     </body>
 </html>
